@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>portforio_resort-hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--グーグルフォント-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kosugi+Maru&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans+JP:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Shippori+Mincho&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <!--スタイルシート-->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<!--参考サイト
+https://www.okinawa-grandmer.com/
+これのjavascriptの動きを見る-->
+
+<body>
+    <header>
+        <nav class="nav-mobile">
+            <div class="nav-mobile-menu">
+                <a href="#top"><p>当ホテルについて</p></a>
+                <a href="#room-info"><p>客室情報</p></a>
+                <a href="#hotel-info"><p>館内情報</p></a>
+                <a href="#activity"><p>周辺アクティビティ</p></a>
+                <a href="#info"><p>お知らせ</p></a>
+                <a href="#adress"><p>アクセス</p></a>
+            </div>
+        </nav>
+        <div class="mobile-open-background"></div>
+        <div class="nav-open-effect"></div>
+        <div class="header-flex">
+            <div class="header-left">
+                <h4>沖縄リゾートホテル</h4>
+            </div>
+            <div class="header-right">
+                <section>
+                    <div class="btn-trigger" id="btn01">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </section>
+                <nav class="nav-pc">
+                    <ul>
+                        <a href="#top"><li>当ホテルについて</li></a>
+                        <a href="#room-info"><li>客室情報</li></a>
+                        <a href="#hotel-info"><li>館内情報</li></a>
+                        <a href="#activity"><li>周辺アクティビティ</li></a>
+                        <a href="#info"><li>お知らせ</li></a>
+                        <a href="#adress"><li>アクセス</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="top-main">
+                <h1 class="main-img-text" id="english-text">Okinawa<br>Resort Hotel<br><span>夢のような沖縄体験を</span></h1>
+                <img src="img/main-img.jpg">
+            </div>
+        </article>
+        <article id="top">
+            <h2 class="el-article-header">View</h2>
+            <div class="top-main-flex">
+                <div class="bl-flex-left">
+                    <div class="main-carousel">
+                        <div><img src="img/メインカルーセル/main-carousel1.jpg" class="main-carousel-img"></div>
+                        <div><img src="img/メインカルーセル/main-carousel2.jpg" class="main-carousel-img"></div>
+                        <div><img src="img/メインカルーセル/main-carousel3.jpg" class="main-carousel-img"></div>
+                    </div>
+                </div>
+                <div class="ly-cont-center bl-flex-right">
+                    <div class="ly-cont-center el-main-title">
+                        <h3>極上の沖縄体験と、忘れられない思い出を。</h3>
+                    </div>
+                    <div class="ly-cont-center" id="top-main-text">
+                        <p>旅の思い出を、更なるものへ。
+                            私たちは来沖されるお客様に向け、記憶に残るような極上のサービスと、心安らぐ室内空間を提供しております。ここでしか見ることのできない景色をさらに引き立て、お客様の沖縄への旅を忘れられない思い出へと昇華させます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="room-info">
+            <div id="room-info-all">
+                <h2 class="el-article-header">Guest Room</h2>
+                <!--room-info-flexはslick用のクラス-->
+                <div class="room-info-flex">
+                    <div>
+                        <div class="bl-room-content">
+                            <div class="ly-cont-center bl-flex-left bl-flex-left-rev">
+                                <div class="el-main-title ly-cont-center">
+                                    <h3>沖縄だけの絶景のオーシャンビュー</h3>
+                                </div>
+                                <div class="room-text" class="ly-cont-center">
+                                    <p>部屋の大きな窓から鮮やかな青い太平洋を一望することができ、沖縄特有のロケーションを思い存分味わうことができるお部屋。
+                                    </p>
+                                    <p class="room-more"><span>more</span></p>
+                                </div>
+                            </div>
+                            <div class="bl-flex-right bl-flex-right-rev"><img src="img/客室情報/ocean-view.jpg"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bl-room-content">
+                            <div class="ly-cont-center bl-flex-left bl-flex-left-rev">
+                                <div class="el-main-title ly-cont-center">
+                                    <h3>亜熱帯の緑を全身で感じるマウンテンビュー</h3>
+                                </div>
+                                <div class="room-text" class="ly-cont-center">
+                                    <p>沖縄の亜熱帯気候ならではの自然豊かな森林の景色を一望することのできる客室。沖縄固有の植物や動物の姿を眺めることができます。運が良いと沖縄の固有種であるノグチゲラなどの姿を見れることもあります。
+                                    </p>
+                                    <p class="room-more"><span>more</span></p>
+                                </div>
+                            </div>
+                            <div class="bl-flex-right bl-flex-right-rev"><img src="img/客室情報/ocean-view.jpg"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bl-room-content">
+                            <div class="ly-cont-center bl-flex-left bl-flex-left-rev">
+                                <div class="el-main-title ly-cont-center">
+                                    <h3>ほかの客室と一線を画す上品なスイートルーム</h3>
+                                </div>
+                                <div class="room-text" class="ly-cont-center">
+                                    <p>ホテルの最上階２室にしかない特別なお部屋。プールやサウナも完備しており、沖縄の豊かな自然を十分に満喫することのできるお部屋。お客様の望む様々な選択肢の贅沢を取り揃えています。
+                                    </p>
+                                    <p class="room-more"><span>more</span></p>
+                                </div>
+                            </div>
+                            <div class="bl-flex-right bl-flex-right-rev"><img src="img/客室情報/ocean-view.jpg"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bl-room-content">
+                            <div class="ly-cont-center bl-flex-left bl-flex-left-rev">
+                                <div class="el-main-title ly-cont-center">
+                                    <h3>ご家族連れの方へ向けたファミリールーム</h3>
+                                </div>
+                                <div class="room-text" class="ly-cont-center">
+                                    <p>広々としたお部屋にベッドを多数取り揃えており、最大８人までご宿泊が可能です。小さなお子様を連れた方のための設備も整っております。
+                                    </p>
+                                    <p class="room-more"><span>more</span></p>
+                                </div>
+                            </div>
+                            <div class="bl-flex-right bl-flex-right-rev"><img src="img/客室情報/ocean-view.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="hotel-info" class="ly-information">
+            <div id="hotel-info-all">
+                <h2 class="el-article-header">Information</h2>
+                <div id="hotel-info-flex">
+                    <div id="restaurant" class="hotel-info-lyout">
+                        <h3>レストラン</h3>
+                        <p>Restaurant</p>
+                    </div>
+                    <div id="hotel-info-content" class="hotel-info-lyout">
+                        <h3>館内案内</h3>
+                        <P>Hotel Guides</P>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="activity">
+            <div id="activity-all">
+                <h2 class="article-header">Activity</h2>
+                <div class="center">
+                    <div class="slick-content">
+                        <img class="slick-img" src="img/activity/tyuraumi-carousel.jpg">
+                        <h3><span class="nowrap">美ら海水族館</span>　<span class="nowrap">およそ４５分</span></h3>
+                    </div>
+                    <div class="slick-content">
+                        <img class="slick-img" src="img/activity/neopark-carousel.jpg">
+                        <h3><span class="nowrap">ネオパーク沖縄</span>　<span class="nowrap">およそ２５分</span></h3>
+                    </div>
+                    <div class="slick-content">
+                        <img class="slick-img" src="img/activity/manzamou-carousel.jpg">
+                        <h3><span class="nowrap">万座毛</span>　<span class="nowrap">およそ２０分</span></h3>
+                    </div>
+                    <div class="slick-content">
+                        <img class="slick-img" src="img/activity/kourizima-carousel.jpg">
+                        <h3><span class="nowrap">古宇利島</span>　<span class="nowrap">およそ６５分</span></h3>
+                    </div>
+                    <div class="slick-content">
+                        <img class="slick-img" src="img/activity/nago-carousel.jpg">
+                        <h3><span class="nowrap">名護パイナップルパーク</span>　<span class="nowrap">およそ４５分</span></h3>
+                    </div>
+                    <div class="slick-content">
+                        <img class="slick-img" src="img/activity/nakizinn-carousel.jpg">
+                        <h3><span class="nowrap">今帰仁城跡</span>　<span class="nowrap">およそ６０分</span></h3>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="info">
+            <div id="info-all">
+                <h2 class="article-header">News</h2>
+                <div id="info-flex">
+                    <div class="info-content">
+                        <div class="info-left"></div>
+                        <div class="info-right">
+                            <h3>年末年始のご予約を開始いたしました。<br><span>2025.07.12</span></h3>
+                            <p>本日より、年末年始のご予約の受付を開始いたしました。年末年始は混雑が予想されるため、早目のご予約をよろしくお願いいたします。</p>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-left"></div>
+                        <div class="info-right">
+                            <h3>レストランの夏季限定メニューを開始いたしました。<br><span>2025.07.01</span></h3>
+                            <p>本日より、年末年始のご予約の受付を開始いたしました。年末年始は混雑が予想されるため、早目のご予約をよろしくお願いいたします。</p>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-left"></div>
+                        <div class="info-right">
+                            <h3>年末年始のご予約を開始いたしました。<br><span>2025.06.19</span></h3>
+                            <p>本日より、年末年始のご予約の受付を開始いたしました。年末年始は混雑が予想されるため、早めのご予約をよろしくお願いいたします。</p>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-left"></div>
+                        <div class="info-right">
+                            <h3>一部区域の臨時休業について<br><span>2025.06.03</span></h3>
+                            <p>当ホテル3階レストランエリアの臨時工事のため、7月18日午前の間臨時休業とさせていただきます。ご迷惑をお掛けし、申し訳ございません。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="adress">
+            <div id="adress-all">
+                <h2>沖縄リゾートホテル</h2>
+                <h4>〒000-0000　沖縄県〇〇市△△△ 000-000<br>チェックイン　15:00/チェックアウト　10：00</h4>
+                <h4>電話：000-0000-0000/FAX:000-0000-0000</h4>
+            </div>
+            <div id="booking">
+                <h3><span>ご予約はこちらから</span></h3>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="footer-all">
+            <h2>沖縄リゾートホテル</h2>
+            <nav id="nav-footer">
+                <ul>
+                    <a href="#top"><li>当ホテルについて</li></a>
+                    <a href="#room-info"><li>客室情報</li></a>
+                    <a href="#hotel-info"><li>館内情報</li></a>
+                    <a href="#activity"><li>周辺アクティビティ</li></a>
+                    <a href="#info"><li>お知らせ</li></a>
+                    <a href="#adress"><li>アクセス</li></a>
+                </ul>
+            </nav>
+            <div id="copyright">
+                <h3>&copy;OkinawaResortHotel</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+}
+
+.midashi {
+    font-size: 34px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+}
+
+header > h1 {
+    border: #000 solid 1px;
+}
+
+section > h1 {
+    text-align: center;
+    height: 50px;
+    margin: 30px;
+}
+
+#home {
+    border: 1px solid #000;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    margin: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+#main-img {
+    width: 100%;
+}
+
+#about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#about-flex > div {
+    margin: 30px;
+}
+
+#about-img > img {
+    border-radius: 50%;
+}
+
+#description > dl > dt {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#description > dl > dd > li {
+    font-size: 18px;
+}
+
+footer {
+    color: grey;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    height: 20px;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+
+/*workのところ一生できない*/
+#works-flex {
+    display: flex;
+    max-width: 752px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.works-content {
+    width: 25%;
+    margin: 0 10px;
+}
+
+.works-content > img {
+    width: 100%;
+} 
+
+@media (max-width: 767px) {
+
+    .midashi {
+        font-size: 22px;
+    }
+    
+    #about-flex {
+        flex-direction: column;
+    }
+
+    #description > dl > dt {
+        margin-left: 30px;
+    }
+
+    #works-flex {
+        flex-direction: column;
+    }
+
+    .works-content {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+}

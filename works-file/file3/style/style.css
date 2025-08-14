@@ -1,0 +1,650 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Shippori Mincho','Kosugi Maru','PT Serif';
+    position: relative;
+    margin: 0;
+    z-index: 5;
+}
+
+/*モジュール一覧*/ 
+.ly-information{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.el-article-header {
+    text-align: center;
+    color: #daa520;
+    border-bottom: #daa520  2px solid;
+    padding: 10px;
+    margin: 40px 22vw;
+}
+
+.el-article-header::before, .el-article-header::after {
+    color: #daa520;
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+
+/*これを利用する際はwidhtを指定すること。*/
+.ly-cont-center {
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+/*header-flex*/
+header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+
+.header-flex {
+    display: flex;
+    margin: 20px 40px;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.nav-pc ul{
+    display: flex;
+    position: relative;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+/*nav-mobile-------------------------------------------------*/
+
+.nav-mobile {
+    position: absolute;
+    z-index: 100;
+    background-color: #daa520;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 350px;
+    display: none;
+}
+
+.mobile-open-background {
+    background-color: #333;
+    opacity: 0.5;
+    width: 100vw;
+    height: 300vh;
+    position: fixed;
+    display: none;
+}
+
+.nav-mobile-menu {
+    margin-top: 60px;
+}
+
+.nav-mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#close-btn {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    font-size: 30px;
+}
+
+/*オープン時の背景*/
+.nav-open-effect {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+    z-index: 10;
+    display: none;
+}
+
+/*ハンバーガーメニュー　テンプレート*/
+
+/*ここまでnav-mobile-------------------------------------------*/
+
+
+
+
+
+/*TOP*/
+.top-main{
+    position: relative;
+    z-index: auto;
+}
+
+
+.top-main img{
+    width: 100%;
+    height: auto;
+}
+
+.main-img-text {
+    position: absolute;
+    color: #fff;
+    line-height: 7vw;
+}
+
+.main-img-text span {
+    font-family: 'Shippori Mincho';
+    font-size: 2vw;
+    margin: 0;
+    margin-left: 25vw;
+}
+
+#english-text {
+    font-family: 'PT Serif';
+    left: 5%;
+    top: 45%;
+    font-size: 8vw;
+}
+
+/*top-main-flex*/
+.top-main-flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/*モジュール　flex*/
+
+.bl-flex-left {
+    width: 50%;
+}
+
+.bl-flex-right {
+    width: 50%;
+    padding: 2.5vw 2vh;
+    border: solid 2px #eee8aa;
+    margin: auto 30px;
+}
+
+/*モジュール flex rev*/
+.bl-flex-left-rev {
+    margin: 30px;
+    padding: 2.5vw 2vh;
+    border: #eee8aa solid 2px;
+}
+
+.bl-flex-right-rev {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+
+
+
+
+
+
+.main-carousel-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+
+
+#top-main-text {
+    margin: 30px;
+    font-size: 18px;
+    color: #daa520;
+}
+
+
+
+/*room-info*/
+#room-info-all {
+    text-align: center;
+    margin: 100px 0;
+}
+
+
+#room-info-all li {
+    list-style: none;
+}
+
+
+/*room-content*/
+.bl-room-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.el-main-title {
+    color: #daa520;
+    text-align: center;
+    font-size: 22px;
+}
+
+.room-text {
+    margin: 30px;
+    font-size: 17px;
+    color: #daa520;
+}
+
+.room-more {
+    margin: 30px 40px 0 0;
+    text-align: right;
+    font-size: 20px;
+}
+
+.room-more::before {
+    content: "⇀";
+    color: #daa520;
+}
+
+
+/*bl-flex-right*/
+
+.bl-flex-right img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+/*ルームインフォ　スリック　カスタマイズ*/
+.slick-dots{
+	bottom: -60px!important;
+}
+.slick-dots li{
+	width:10vw!important;
+}
+.slick-dots li button:before{
+	font-size:10px!important;
+}
+
+
+/*hotel-info*/
+#hotel-info-all {
+    margin: 50px auto;
+}
+
+#hotel-info-flex {
+    display: flex;
+    margin: 8vw auto;
+    justify-content: space-around;
+}
+
+#restaurant {
+    background-image: url(../img/information/restaurant.jpg);
+    background-position: 50% 35%;
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode:darken;
+}
+
+
+#hotel-info-content {
+    background-image: url(../img/information/front.jpg);
+    background-position: 50% 50%;
+    background-color:rgba(0,0,0,0.6);
+    background-blend-mode:darken;
+}
+
+.hotel-info-lyout {
+    text-align: center;
+    outline: #fff solid 2px;
+    outline-offset: -20px;
+    color: #fff;
+    font-weight: 500;
+    width: 40vw;
+    padding: 80px 0;
+    background-size: 100%;
+    margin: 20px;
+}
+
+
+
+/*activity*/
+#activity-all {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.slick-img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.slick-content h3 {
+    font-size:min(2vw,20px);
+}
+
+.slick-content {
+    margin: 20px;
+    transition: opacity .5s,transform .5s;
+    transform: scale(0.7);
+    opacity: .5;
+    text-align: center;
+}
+
+
+.slick-content.slick-center {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slick-content.slick-center img {
+    border: #daa520 solid 3px;
+}
+
+/*暗くすることも可能　コメントアウトを外して利用*/
+/*
+.slick-content.slick-center {
+    filter: brightness(1);
+    transform: scale(1);
+}
+*/
+
+.center {
+    margin: 20px;
+}
+
+/*info*/
+#info-all {
+    text-align: center;
+    margin: 100px auto;
+}
+
+#info-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-right {
+    text-align: left;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.info-right h3 span {
+    color: #a9a9a9;
+    font-size: 75%;
+}
+
+
+.info-content {
+    width: 40vw;
+    display: flex;
+    margin: 30px;
+}
+
+/*adress*/
+#adress-all {
+    text-align: center;
+    margin: 50px;
+}
+
+/*booking*/
+#booking {
+    text-align: center;
+    margin: 40px;
+}
+
+#booking h3 span {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 7vw;
+    border-radius: 10px;
+    border: solid 3px #a9a9a9;
+    font-weight: 400;
+}
+
+/*footer*/
+
+#nav-footer ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+#footer-all {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+#footer-all h2 {
+    margin-bottom: 50px;
+}
+
+#copyright {
+    color: #fff;
+    background-color: #333;
+    width: 100vw;
+    height: 15px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1400px) {
+    #info-content {
+        width: 80vw;
+    }
+}
+
+@media screen and(min-width:951px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    #nav-mobile-humberger {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .nav-pc {
+        display: none;
+    }
+
+.header-flex {
+    display: flex;
+    margin: 30px 20px;
+    color: #fff;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+
+/*ハンバーガーメニュー------------------------------------*/
+
+.btn-trigger {
+  position: relative;
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+}
+.btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 90%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 100;
+}
+.btn-trigger, .btn-trigger span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+.btn-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.btn-trigger span:nth-of-type(2) {
+  top: 12px;
+}
+.btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+#btn01.active span:nth-of-type(1) {
+  -webkit-transform: translateY(100%) rotate(-45deg);
+  transform: translateY(15px) rotate(-45deg);
+}
+#btn01.active span:nth-of-type(2) {
+  opacity: 0;
+}
+#btn01.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-15px) rotate(45deg);
+  transform: translateY(-10px) rotate(45deg);
+}
+
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    #hotel-info-flex {
+        flex-flow: column;
+    }
+
+    .hotel-info-lyout {
+        margin: 30px auto;
+        width: 80vw;
+
+    }
+}
+
+@media screen and (max-width: 840px) {
+    /*header*/
+    .header-flex {
+        margin: 10px 20px;
+        align-items: center;
+    }
+
+    /*view*/
+    .top-main-flex {
+        flex-flow: column;
+    }
+
+    .bl-flex-left , .bl-flex-right {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .main-carousel-img {
+        max-height: 240px;
+    }
+
+    /*room-info*/
+    .bl-room-content {
+        flex-flow: column;
+        flex-direction: column-reverse;
+    }
+
+    .bl-flex-right img {
+        max-height: 240px;
+    }
+
+    /*footer*/
+    #nav-footer ul {
+        flex-flow: column;
+    }
+
+    #nav-footer li {
+        margin-bottom: 20px;
+    }
+
+    .slick-img {
+        height: 170px;
+    }
+
+    .slick-content h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .top-main img {
+        min-height: 450px;
+        object-fit: cover;
+    }
+
+    .info-content {
+        flex-flow: column;
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .main-img-text {
+        line-height: 50px;
+    }
+
+    #english-text {
+        font-size: 50px;
+        top: 55%;
+    }
+
+    .main-img-text span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    /*view room text*/
+    .el-main-title {
+        font-size: 17px;
+    }
+
+    .room-text,#top-main-text {
+        font-size: 14px;
+    }
+
+    #top-main-text,.room-text {
+        margin: 10px;
+    }
+
+    /*hotel-info*/
+    .hotel-info-lyout {
+        max-height: 250px;
+    }
+    
+}
